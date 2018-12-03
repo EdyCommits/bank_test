@@ -11,10 +11,12 @@ INITIAL_BALANCE = 0
   end
 
   def deposit(amount)
-    @balance = current_balance + amount
+    @balance += amount
   end
 
   def withdraw(amount)
-    @balance = current_balance - amount
+    @balance -= amount
   end
+
+
 end
