@@ -54,6 +54,7 @@ $ bundle
 
 ```
 $ ruby app.rb
+```
 
 ### To run tests:
 
