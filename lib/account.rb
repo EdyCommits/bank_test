@@ -14,4 +14,7 @@ INITIAL_BALANCE = 0
     @balance = current_balance + amount
   end
 
+  def withdraw(amount)
+    @balance = current_balance - amount
+  end
 end
