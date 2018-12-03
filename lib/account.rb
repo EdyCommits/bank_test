@@ -10,4 +10,8 @@ INITIAL_BALANCE = 0
     @balance
   end
 
+  def deposit(amount)
+    @balance = current_balance + amount
+  end
+
 end
