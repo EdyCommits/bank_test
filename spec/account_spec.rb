@@ -1,7 +1,7 @@
 require 'account'
 describe 'Account' do
 
-INITIAL_BALANCE = 0
+  INITIAL_BALANCE = 0
 
   it 'starts with an empty account' do
     account = Account.new
