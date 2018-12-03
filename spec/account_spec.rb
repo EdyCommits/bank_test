@@ -1,10 +1,12 @@
 require 'account'
 describe 'Account' do
 
+INITIAL_BALANCE = 0
+
   it 'starts with an empty account' do
     account = Account.new
 
-    expect(account.current_balance).to eq(0)
+    expect(account.current_balance).to eq(INITIAL_BALANCE)
   end
 
   it 'allows to deposit money in' do
