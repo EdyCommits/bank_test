@@ -8,4 +8,9 @@ describe TransactionLog do
   it 'creates a transction' do
     subject.create_transactions([100, 10, 90])
   end
+
+  it 'stores transactions in an array' do
+    subject.save(transaction)
+    expect(subject.all_transactions[0]).to eq transaction
+  end
 end
