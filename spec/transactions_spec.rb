@@ -19,6 +19,4 @@ describe Transactions do
   it 'stores balance' do
     expect(subject.current_balance).to eq 90
   end
-
-
 end
