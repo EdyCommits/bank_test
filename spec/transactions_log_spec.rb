@@ -13,4 +13,13 @@ describe TransactionLog do
     subject.save(transaction)
     expect(subject.all_transactions[0]).to eq transaction
   end
+
+  it 'saves multiple transactions into the array' do
+    subject.save(transaction)
+    subject.save(transaction_another)
+
+    expect(subject.all_transactions[0]).to eq transaction
+    expect(subject.all_transactions[1]).to eq transaction_another
+
+  end
 end
