@@ -54,10 +54,10 @@ Clone this repository and then run:
 $ bundle
 ```
 
-### To run the app:
+### To run the app in IRB:
 
 ```
-$ ruby app.rb
+$ 
 ```
 
 ### To run tests:
