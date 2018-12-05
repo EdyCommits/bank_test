@@ -8,4 +8,5 @@ class Transaction
     @debit = withdraw
     @current_balance = current_balance
   end
+  
 end

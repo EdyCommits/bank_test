@@ -1,20 +1,20 @@
-class TransactionLog
+require_relative 'transaction'
 
+class TransactionLog
+  
   attr_reader :all_transactions
 
   def initialize
     @all_transactions = []
   end
 
-  def create_transactions(transaction)
-    Transaction.new(deposit: transaction[0], withdraw: transaction[1], current_balance: transaction[2])
+  def add(deposit: 0, withdraw: 0, current_balance:)
+    save(Transaction.new(deposit: deposit, withdraw: withdraw, current_balance: current_balance))
   end
 
+private
   def save(transaction)
     @all_transactions << transaction
   end
 
-  def add(transaction)
-    save(create_transactions(transaction))
-  end
 end

@@ -1,4 +1,3 @@
-require_relative 'transaction'
 require_relative 'transaction_log'
 require_relative 'statement'
 
@@ -17,13 +16,13 @@ class Account
 
   def deposit(amount)
     @balance += amount
-    @transaction_log.add([amount, 0, @balance])
+    @transaction_log.add(deposit: amount, current_balance: @balance)
   end
 
   def withdraw(amount)
     raise "Not enough funds!" if amount > @balance
     @balance -= amount
-    @transaction_log.add([0, amount, @balance])
+    @transaction_log.add(withdraw: amount, current_balance: @balance)
   end
 
 end
