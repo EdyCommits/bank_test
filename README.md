@@ -2,6 +2,10 @@
 
 IRB app which displays account total, allows to withdraw and deposit money, displays statement.
 
+## Set Up
+- Clone the ripo git@github.com:Edy1988/bank_test.git
+- Run the command `bundle` to install dependencies
+
 ## MVP User Stories
 
 ```
@@ -27,19 +31,6 @@ date || credit || debit || balance
 
 ```
 
-## Future User Stories
-
-```
-As a user,
-So I can make sure I don't pay charges,
-I am not able to create negative balance.
-
-As a user,
-So I can make sure I don't go into overdraft,
-I have a warning if I have £10 or less.
-
-```
-
 ## Domain Model
 place holder
 ![domain model](./public/images/diagram2.png)
@@ -57,7 +48,7 @@ $ bundle
 ### To run the app in IRB:
 
 ```
-$ 
+$
 ```
 
 ### To run tests:
