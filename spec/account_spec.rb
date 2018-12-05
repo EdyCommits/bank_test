@@ -22,6 +22,13 @@ describe 'Account' do
     expect(account.current_balance).to eq(3)
   end
 
+  it 'does not allow to overdraw' do
+    account = Account.new
+    account.deposit(50)
+
+    expect { account.withdraw(100) }.to raise_error 'Not enough funds!'
+  end
+
   it 'deducts and adds money to current balance' do
     account = Account.new
     account.deposit(50)
