@@ -3,8 +3,8 @@ require 'statement_printer'
 describe StatementPrinter do
 
   it 'outputs transactions in correct format' do
-    past = Time.utc(2017,10,21)
-    latest = Time.utc(2017,10,22)
+    past = Time.utc(2017, 10, 21)
+    latest = Time.utc(2017, 10, 22)
 
     latest_transaction = double(:latest_transaction, date: latest, credit: 100, debit: 0, current_balance: 100)
     past_transaction = double(:old_transaction, date: past, credit: 0, debit: 20, current_balance: 80)
@@ -13,8 +13,8 @@ describe StatementPrinter do
   end
 
   it 'always outputs transactions in descending order (by date)' do
-    past = Time.utc(2017,10,21)
-    latest = Time.utc(2017,10,22)
+    past = Time.utc(2017, 10, 21)
+    latest = Time.utc(2017, 10, 22)
 
     latest_transaction = double(:latest_transaction, date: latest, credit: 100, debit: 0, current_balance: 100)
     past_transaction = double(:old_transaction, date: past, credit: 0, debit: 20, current_balance: 80)
