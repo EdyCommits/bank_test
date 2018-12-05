@@ -1,4 +1,4 @@
-require_relative 'transactions'
+require_relative 'transaction'
 require_relative 'transaction_log'
 require_relative 'statement'
 

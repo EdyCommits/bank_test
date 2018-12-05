@@ -1,4 +1,5 @@
 require 'account'
+
 describe 'Account' do
 
   it 'starts with an empty account' do

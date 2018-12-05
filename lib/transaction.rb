@@ -1,4 +1,4 @@
-class Transactions
+class Transaction
 
   attr_reader :date, :credit, :debit, :current_balance
 

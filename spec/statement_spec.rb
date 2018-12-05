@@ -1,5 +1,4 @@
 require 'statement'
-require 'transactions'
 
 describe Statement do
 
