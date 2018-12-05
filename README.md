@@ -72,4 +72,4 @@ rubocop
 
 ## Future updates
 1. Add confirmation when transaction was made.
-2. Fixed 'lint too long' linter errors.
+2. Fixed 'line too long' linter errors.
