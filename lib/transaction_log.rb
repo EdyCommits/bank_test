@@ -13,4 +13,8 @@ class TransactionLog
   def save(transaction)
     @all_transactions << transaction
   end
+
+  def add(transaction)
+    save(create_transactions(transaction))
+  end
 end
