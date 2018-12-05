@@ -35,11 +35,10 @@ date || credit || debit || balance
 place holder
 ![domain model](./public/images/diagram2.png)
 
-## How to use
-
 ### To set up the project
 
-Clone this repository and then run:
+Clone the ripo git@github.com:Edy1988/bank_test.git
+and then run:
 
 ```
 $ bundle
@@ -47,10 +46,23 @@ $ bundle
 
 ### To run the app in IRB:
 
+* Open `irb` and run `require './lib/account.rb'`
+*  Follow the instructions below:
 ```
-$
-```
+account = Account.new
+=> creates a new bank account instance
 
+account.deposit(100)
+ => adds funds to account
+
+account.withdraw(10)
+ => deducts funds from account
+
+account.print_statement
+=> Date || Credit || Debit || Balance
+05/12/2018 || 0 || 10 || 90
+05/12/2018 || 100 || 0 || 100
+```
 ### To run tests:
 
 ```
@@ -64,3 +76,5 @@ rubocop
 ```
 
 ## Future updates
+1. Add confirmation when transaction was made.
+2. Fixed 'lint too long' linter errors.
