@@ -3,7 +3,7 @@
 IRB app which displays account total, allows to withdraw and deposit money, displays statement.
 
 ## Set Up
-- Clone the ripo git@github.com:Edy1988/bank_test.git
+- Clone the repo git@github.com:Edy1988/bank_test.git
 - Run the command `bundle` to install dependencies
 
 ## MVP User Stories
@@ -30,11 +30,6 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 
 ```
-
-## Domain Model
-place holder
-![domain model](./public/images/diagram2.png)
-
 ### To set up the project
 
 Clone the ripo git@github.com:Edy1988/bank_test.git
