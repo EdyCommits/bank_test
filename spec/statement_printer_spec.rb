@@ -1,6 +1,6 @@
-require 'statement'
+require 'statement_printer'
 
-describe Statement do
+describe StatementPrinter do
 
   let(:date) { double :date }
   let(:another_date) { double :another_date }

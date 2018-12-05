@@ -1,14 +1,14 @@
 require_relative 'transaction_log'
-require_relative 'statement'
+require_relative 'statement_printer'
 
 class Account
 
   INITIAL_BALANCE = 0
 
-  def initialize(transaction_log: TransactionLog.new, statement: Statement.new)
+  def initialize(transaction_log: TransactionLog.new, statement_printer: StatementPrinter.new)
     @balance = INITIAL_BALANCE
     @transaction_log = transaction_log
-    @statement = statement
+    @statement_printer = statement_printer
   end
 
   def current_balance
@@ -27,7 +27,7 @@ class Account
   end
 
   def print_statement
-    @statement.print(@transaction_log.all_transactions)
+    @statement_printer.print(@transaction_log.all_transactions)
   end
 
 end

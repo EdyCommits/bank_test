@@ -1,5 +1,5 @@
-class Statement
-  
+class StatementPrinter
+
   def print(transactions)
     puts 'Date || Credit || Debit || Balance'
 
