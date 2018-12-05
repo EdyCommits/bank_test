@@ -22,6 +22,8 @@ class Account
   def withdraw(amount)
     raise "Not enough funds!" if amount > @balance
     @balance -= amount
+    @transaction_log.add([0, amount, @balance])
+
   end
 
 end
