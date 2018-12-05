@@ -1,5 +1,6 @@
 require_relative 'transactions'
 require_relative 'transaction_log'
+require_relative 'statement'
 
 class Account
 
@@ -23,7 +24,6 @@ class Account
     raise "Not enough funds!" if amount > @balance
     @balance -= amount
     @transaction_log.add([0, amount, @balance])
-
   end
 
 end
