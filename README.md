@@ -2,8 +2,13 @@
 
 IRB app which displays account total, allows to withdraw and deposit money, displays statement.
 
+## My approach
+
+My approach to this challenge was to first understand the requirements, which made me chose Ruby as a language since I am the most familiar with it. Next I wrote user stories, so I could direct the development and develop the features. 
+I used TDD to avoid errors and move in small steps. I have separated the logic into multiple classes to follow SOLID principles as best as I could. Have I had more time I would implement future updates, see below. 
+
 ## Set Up
-- Clone the ripo git@github.com:Edy1988/bank_test.git
+- Clone the repo git@github.com:Edy1988/bank_test.git
 - Run the command `bundle` to install dependencies
 
 ## MVP User Stories
@@ -30,11 +35,6 @@ date || credit || debit || balance
 10/01/2012 || 1000.00 || || 1000.00
 
 ```
-
-## Domain Model
-place holder
-![domain model](./public/images/diagram2.png)
-
 ### To set up the project
 
 Clone the ripo git@github.com:Edy1988/bank_test.git
@@ -77,4 +77,4 @@ rubocop
 
 ## Future updates
 1. Add confirmation when transaction was made.
-2. Fixed 'lint too long' linter errors.
+2. Fixed 'line too long' linter errors.
